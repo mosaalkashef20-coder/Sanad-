@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>متجر سند ستور</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1e88e5, #0d47a1);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-height: 60px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #eee;
+      border-radius: 10px 10px 0 0;
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #0d47a1;
+    }
+    .product p {
+      margin: 8px 0;
+      font-size: 15px;
+      padding: 0 10px;
+    }
+    .price {
+      color: #d32f2f;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 5px 20px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .btn-wa { background: #25D366; }
+    .btn-wa:hover { background: #1ebe5c; }
+    .btn-aliexpress { background: #ff4747; }
+    .btn-aliexpress:hover { background: #e53b3b; }
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer h3 {
+      margin-top: 0;
+    }
+    footer a {
+      color: #25D366;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .product h3 { font-size: 16px; }
+      .price { font-size: 16px; }
+      .btn { font-size: 13px; padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fjrs8-2.fna.fbcdn.net/v/t39.30808-6/554323444_122220239390254100_6883666671855725029_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qkqbIUPtLnsQ7kNvwGMpyvl&_nc_oc=Adn7-gPIms7BgzXmeA_rzbytltgBeMxms_yz-iOacsJojM9gUez9MbeVHGxDRxtk1QE&_nc_zt=23&_nc_ht=scontent.fjrs8-2.fna&_nc_gid=KexQfxDqqJYKSIFUZnjN2w&oh=00_Afbq-3UYW6FfdNoSPx8OTU-82wsa24EQdnh8uUjYCOb_3A&oe=68DD9487" alt="شعار المتجر">
+    <h1>سند ستور</h1>
+    <p>أفضل المنتجات التقنية بأسعار منافسة</p>
+  </header>
+
+  <section class="products">
+    <!-- منتج 1 -->
+    <div class="product">
+      <img src="https://scontent.fjrs8-2.fna.fbcdn.net/v/t39.30808-6/554785158_122098888461040139_724207967028462482_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=z2jrrFGsEVEQ7kNvwFaNO8N&_nc_oc=AdmKv7ldRDrmz6rTz4LiUNYpgaSnClyBrr2oi7dH4LIBQmApqd-o0ZjhBXA61s9lkj4&_nc_zt=23&_nc_ht=scontent.fjrs8-2.fna&_nc_gid=C94sDY3IVQSECtHB8JDwxQ&oh=00_AfaSdtiGlZxHfRTVA_kXFqQEH4amLUqF_Rp7jTdjBo3cKg&oe=68DDA6DE" alt="مقوي واي فاي">
+      <h3>مقوي واي فاي 1200Mbps</h3>
+      <p>موسع نطاق الشبكة 2.4G/5G لتقوية الإشارة.</p>
+      <p class="price">150 ₪</p>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/972566921993?text=أريد شراء مقوي واي فاي">اطلب عبر واتساب</a>
+        <a class="btn btn-aliexpress" href="https://a.aliexpress.com/_c2vFmY7D" target="_blank">رابط المنتج</a>
+      </div>
+    </div>
+
+    <!-- منتج 2 -->
+    <div class="product">
+      <img src="https://scontent.fjrs8-2.fna.fbcdn.net/v/t39.30808-6/554105749_122098897485040139_9035509216652639186_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Td1N7eOwMCIQ7kNvwG4WGMr&_nc_oc=Adla7bekzU_tbcuIItfzkVfZwRZYMj9Fpyc95AO2hqM_IXoEwBZdMkQoA2itfMiOJpE&_nc_zt=23&_nc_ht=scontent.fjrs8-2.fna&_nc_gid=Hy9fjBiqQ0EUSwexKt4ojQ&oh=00_AfZju43vZiSHzBDdiptWqc6EJtUfR5EClPaXlKWSTOvtYg&oe=68DDB899" alt="كاميرا مراقبة 8MP">
+      <h3>كاميرا مراقبة 8MP</h3>
+      <p>تتبع حركة + صوت ثنائي + رؤية ليلية.</p>
+      <p class="price">119 ₪</p>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/972566921993?text=أريد شراء كاميرا مراقبة">اطلب عبر واتساب</a>
+        <a class="btn btn-aliexpress" href="https://a.aliexpress.com/_c35NcNCR" target="_blank">رابط المنتج</a>
+      </div>
+    </div>
+
+    <!-- منتج 3 -->
+    <div class="product">
+      <img src="https://scontent.fjrs8-2.fna.fbcdn.net/v/t39.30808-6/554978459_122098911147040139_8198102749035961575_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Wk1KeaZvAQwQ7kNvwFn7XH7&_nc_oc=AdmRilvEsadpu_1ep6zTopoGeGOX-NyyWVTyXamksKIUosKfMI5dFYxERsOUDtsk__o&_nc_zt=23&_nc_ht=scontent.fjrs8-2.fna&_nc_gid=oEptSZioEDWUYsP-qtPvxw&oh=00_AfYu8jRP2WOBB0OaS-oupBaIJz98x43VIiXJX2zckn_E3g&oe=68DDB391" alt="مفاتيح ذكية Tuya">
+      <h3>مفاتيح ذكية Tuya</h3>
+      <p>5 مفاتيح × 3 كبسات + 4 مفاتيح × 2 كبسات.</p>
+      <p class="price">500 ₪</p>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/972566921993?text=أريد شراء مفاتيح Tuya">اطلب عبر واتساب</a>
+        <a class="btn btn-aliexpress" href="https://a.aliexpress.com/_c2v7sBur" target="_blank">رابط المنتج</a>
+      </div>
+    </div>
+
+    <!-- منتج 4 -->
+    <div class="product">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0fe6513e9a0e4519b560cecc99273f00n.jpg_220x220q75.jpg_.avif" alt="التبخيره اللاسلكيه">
+      <h3>جهاز التبخيره</h3>
+      <p>جهاز استنشاق محمول للأطفال والكبار.</p>
+      <p class="price">80 ₪</p>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/972566921993?text=أريد شراء نيبولايزر">اطلب عبر واتساب</a>
+        <a class="btn btn-aliexpress" href="https://a.aliexpress.com/_c4Fi1rMJ" target="_blank">رابط المنتج</a>
+      </div>
+    </div>
+
+    <!-- منتج 5 -->
+    <div class="product">
+      <img src="https://scontent.fjrs8-2.fna.fbcdn.net/v/t39.30808-6/553546913_122098908393040139_5077926240773995336_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7o9Xg03TGNUQ7kNvwElAkcv&_nc_oc=Adk2qU8DmWp01v6GlpeimvIsM5ddbJvUA6YZ5SAoyzJ05-_PLWwc6GIr9mEzM6mrF5o&_nc_zt=23&_nc_ht=scontent.fjrs8-2.fna&_nc_gid=MS-6xLu6-iYh9inuUfGdzg&oh=00_AfYAhB8GZ-v_jtKMfDpwI6_vzsvtmvn8DLpaFLmlTvb3Ww&oe=68DDB6D3" alt="درون E88 Pro">
+      <h3>درون E88 Pro</h3>
+      <p>طائرة 4K مع حقيبة + ريموت.</p>
+      <p class="price">149 ₪</p>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/972566921993?text=أريد شراء درون E88 Pro">اطلب عبر واتساب</a>
+        <a class="btn btn-aliexpress" href="https://a.aliexpress.com/_c3F8CEvN" target="_blank">رابط المنتج</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>📞 تواصل معنا</h3>
+    <p>واتساب: <a href="https://wa.me/972566921993">اضغط هنا</a></p>
+    <p>البريد الإلكتروني: https://www.facebook.com/profile.php?id=61581204188773</p>
+    <h3>💳 طرق الدفع</h3>
+    <p>كاش عند الاستلام | تحويل بنكي | PayPal</p>
+    <p>© 2025 سند ستور - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
